@@ -34,20 +34,21 @@ console.log(localizedText);
 // Task 2: Advanced Tagged Template
 
 function highlightKeywords(template, keywords) {
-    keywords.forEach(keyword => {
-        const regex = new RegExp(keyword, 'gi');
-        template = template.replace(regex, `<span class='highlight'>${keyword}</span>`);
+    return template.replace(/\/\${(\d+)}/g, (_, index) => {
+        const keyword = keywords[index];
+        if (keyword) {
+            return `<span class='highlight'>${keyword}</span>`;
+        }
+        return '';
     });
-    return template;
 }
 
 const keywords = ["JavaScript", "template", "tagged"];
-const template = "Learn JavaScript tagged templates to create custom templateliterals for tagged manipulation.";
+const template = "Learn /${0} tagged templates to create custom /${1} literals for /${2} manipulation.";
 
 const highlighted = highlightKeywords(template, keywords);
 
 console.log(highlighted);
-
 
 // Task 3: Multiline Tagged Template
 
@@ -56,7 +57,7 @@ function multiline(strings, ...values) {
         const lines = str.split('\n');
         let lineNumber = 1
         lines.forEach((line, index) => {
-                if(line !== '') result.push(`${lineNumber++} ${line}`);
+                result.push(`${lineNumber++} ${line}`);
         });
         if (i < values.length) {
             result.push(values[i]);
