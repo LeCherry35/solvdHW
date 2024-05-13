@@ -57,7 +57,7 @@ function multiline(strings, ...values) {
         const lines = str.split('\n');
         let lineNumber = 1
         lines.forEach((line, index) => {
-            if(line !== '') result.push(`${lineNumber++} ${line}`);
+            if(line.trim() !== '') result.push(`${lineNumber++} ${line}`);
         });
         if (i < values.length) {
             result.push(values[i]);
