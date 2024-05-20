@@ -29,7 +29,7 @@ new Book(title, author, isbn, price, availability)
 - `price` (number): The price of the book.
 - `availability` (boolean): The availability status of the book.
 
-### Getter Methods
+**Getter Methods:**
 
 - `get title()`: Retrieves the title of the book.
 - `get author()`: Retrieves the author of the book.
@@ -37,7 +37,7 @@ new Book(title, author, isbn, price, availability)
 - `get price()`: Retrieves the price of the book.
 - `get availability()`: Retrieves the availability status of the book.
 
-### Setter Methods
+**Setter Methods:**
 
 - `set title(title)`: Sets the title of the book.
 - `set author(author)`: Sets the author of the book.
@@ -55,7 +55,7 @@ Represents a fiction book in the online bookstore, inherits from `Book`.
 new FictionBook(title, author, isbn, price, availability)
 ```
 
-### Getter Methods
+**Getter Methods:**
 
 - `get type()`: Retrieves the type of the book (always "Fiction").
 
@@ -69,7 +69,7 @@ Represents a non-fiction book in the online bookstore, inherits from `Book`.
 new NonFictionBook(title, author, isbn, price, availability)
 ```
 
-### Getter Methods
+**Getter Methods:**
 
 - `get type()`: Retrieves the type of the book (always "Non-Fiction").
 
@@ -87,13 +87,13 @@ new User(name, email, userId)
 - `email` (string): The email address of the user.
 - `userId` (string): The unique user ID of the user.
 
-### Getter Methods
+**Getter Methods:**
 
 - `get name()`: Retrieves the name of the user.
 - `get email()`: Retrieves the email address of the user.
 - `get userId()`: Retrieves the unique user ID of the user.
 
-### Setter Methods
+**Setter Methods:**
 
 - `set name(name)`: Sets the name of the user.
 - `set email(email)`: Sets the email address of the user.
@@ -111,12 +111,12 @@ new Cart(user)
 
 - `user` (User): The user this cart belongs to.
 
-### Getter Methods
+**Getter Methods:**
 
 - `get user()`: Retrieves the user this cart belongs to.
 - `get books()`: Retrieves the array of books in the cart.
 
-### Setter Methods
+**Setter Methods:**
 
 - `set user(user)`: Sets the user this cart belongs to.
 - `set books(books)`: Sets the array of books in the cart.
@@ -140,7 +140,7 @@ new Order(user, books)
 - `user` (User): The user who placed the order.
 - `books` (Array<Book>): The array of books in the order.
 
-### Getter Methods
+**Getter Methods:**
 
 - `get user()`: Retrieves the user who placed the order.
 - `get books()`: Retrieves the array of books in the order.
@@ -148,7 +148,7 @@ new Order(user, books)
 - `get totalPrice()`: Retrieves the total price of all books in the order.
 - `get isPayed()`: Retrieves the payment status of the order.
 
-### Setter Methods
+**Setter Methods:**
 
 - `set user(user)`: Sets the user who placed the order.
 - `set books(books)`: Sets the array of books in the order.
