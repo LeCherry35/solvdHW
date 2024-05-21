@@ -80,12 +80,11 @@ Represents a user of the online bookstore.
 **Constructor:**
 
 ```
-new User(name, email, userId)
+new User(name, email)
 ```
 
 - `name` (string): The name of the user.
 - `email` (string): The email address of the user.
-- `userId` (string): The unique user ID of the user.
 
 **Getter Methods:**
 
@@ -97,7 +96,6 @@ new User(name, email, userId)
 
 - `set name(name)`: Sets the name of the user.
 - `set email(email)`: Sets the email address of the user.
-- `set userId(userId)`: Sets the unique user ID of the user.
 
 #### `Cart`
 
@@ -165,8 +163,8 @@ new Order(user, books)
 
 ```
 // Create new users
-const user1 = new User("John Smith", "js@mail.com", 0);
-const user2 = new User("Smith John", "js2@mail.com", 1);
+const user1 = new User("John Smith", "js@mail.com");
+const user2 = new User("Smith John", "js2@mail.com");
 
 // Create new books
 const book1 = new Book("Harry Potter", "J K Rowling", "1", 20, true);

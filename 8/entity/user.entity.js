@@ -8,12 +8,11 @@ class User {
    * @constructor
    * @param {string} name - The name of the user.
    * @param {string} email - The email address of the user.
-   * @param {string} userId - The unique user ID of the user.
    */
-  constructor(name, email, userId) {
+  constructor(name, email) {
     this._name = name;
     this._email = email;
-    this._userId = userId;
+    this._userId = Date.now()
   }
   /**
    * Gets the name of the user.
@@ -54,13 +53,4 @@ class User {
   get userId() {
     return this._userId;
   }
-
-  /**
-   * Sets the unique user ID of the user.
-   * @param {string} userId - The new unique user ID of the user.
-   */
-  set userId(userId) {
-    this._userId = userId;
-  }
-
 }
