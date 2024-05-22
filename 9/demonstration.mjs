@@ -74,8 +74,8 @@ console.log("Shortest path from A to D using BFS:");
 console.log(graph.findShortestPathBFS('A', 'D')); // Output: ['A', 'B', 'D'] or ['A', 'C', 'D']
 
 // Assume graph.findShortestPathDijkstra has been implemented properly with weights
-// console.log("Shortest path from A to D using Dijkstra:");
-// console.log(graph.findShortestPathDijkstra('A', 'D')); // Output: ['A', 'C', 'D'] or any other valid shortest path
+console.log("Shortest path from A to D using Dijkstra:");
+console.log(graph.findShortestPathDijkstra('A', 'D')); // Output: ['A', 'C', 'D'] or any other valid shortest path
 
 // Create a BinaryTree instance and perform basic operations
 const binaryTree = new BinaryTree();
