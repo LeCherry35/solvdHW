@@ -6,11 +6,11 @@ This library provides implementations of several fundamental data structures and
 
 ## Table of Contents
 
-[Stack](#stack)
-[Queue](#queue)
-[BinaryTree](#bintree)
-[Graph](#graph)
-[LinkedList](#linkedlist)
++ [Stack](#stack)
++ [Queue](#queue)
++ [BinaryTree](#bintree)
++ [Graph](#graph)
++ [LinkedList](#linkedlist)
 
 ## Classes
 
