@@ -2,13 +2,17 @@
 
 The HashTable class implements a hash table with FNV hashing function. It uses separate chaining for collision resolution. It includes methods for inserting, retrieving, and deleting key-value pairs.
 
-## FNV haash function
++ [FNV Hash Function](#hashfn)
++ [Hash Table](#hashtbl)
 
+## FNV Hash Function <a name = "hashfn"><a>
 We start with an initial hash value, known as the offset basis. For 32-bit FNV-1a, the offset basis is 2166136261 (in hexadecimal: 0x811c9dc5). Then for each character in the string key, convert it to its ASCII value and perform the following steps:
 1.XOR the hash with the ASCII value of the character.
 2.Multiply the hash value by a prime number known as the FNV prime. For 32-bit FNV-1a, the prime is 16777619 (in hexadecimal: 0x01000193).
 
 The time complexity is O(k) where `k` is the length of the key, as it processes each character of the key once, this can be treated as O(1) due to the constant time complexity for typical short keys
+
+## Hash Table <a name = "hashtbl"><a>
 
 **Constructor**
 
